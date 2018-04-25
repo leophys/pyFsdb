@@ -1,6 +1,7 @@
 *.pyc
 build/*
 dist/*
+.eggs/*
 Fsdb.egg-info/*
 docs/build/*
 compile_and_upload_signed.sh
