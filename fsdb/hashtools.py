@@ -31,5 +31,5 @@ def calc_digest(origin, algorithm="sha1", block_size=None):
         chunk = origin.read(block_size) if block_size else origin.read()
         if not chunk:
             break
-        hashM.update(chunk)
+        hashM.update(bytes(chunk))
     return hashM.hexdigest()
